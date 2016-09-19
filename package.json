@@ -1,0 +1,20 @@
+{
+  "name": "Notes",
+  "version": "0.0.1",
+  "description": "Notes platform on Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/Jetmix/Notes.git"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "underscore": "1.4.x",
+    "nconf": "0.6.x",
+    "mongoose": "3.8.x",
+    "body-parser": "~1.0.1"
+  }
+}

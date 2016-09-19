@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Notes App</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/app.css" />
+	<script type="text/javascript" src="../js/lib/jquery.min.js"></script> 
+	<script type="text/javascript" src="../js/lib/knockout-3.4.0.js"></script>
+	<script type="text/javascript" src="../js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/custom/NotesViewModel.js"></script>
+</head>
+<body>
+	<h3>Notes App</h3>
+	<div class="row">
+		<div class="col-md-6">
+			<input class='form-control' type="text" name="add-note" data-bind='value: newName' />
+		</div>
+		<div class="col-md-3">
+			<button class="btn btn-default" data-bind='click: addNote'>Add Note</button>
+		</div>
+	</div>
+	<table class="table table-default">
+		<thead>
+			<tr>
+				<th>Note</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody data-bind='foreach: notes'>
+			<tr>
+				<td><input type="text" data-bind='value: name' class='form-control'></td>
+				<td>
+					<a href="javascript:void()" data-bind="click: update"><span class='glyphicon glyphicon-edit'></span></a>
+					<a href="javascript:void()" data-bind="click: remove"><span class='glyphicon glyphicon-remove'></span></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

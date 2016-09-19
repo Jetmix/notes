@@ -1,0 +1,39 @@
+body {
+    padding: 10px 15%;
+}
+
+.glyphicon {
+    font-size: 2em;
+}
+
+.confirmation-message, .confirmation-message-failure {
+    position: fixed;
+    top: 10px;
+    left: 12.5%;
+    width: 75%;
+    display: none;
+    z-index: 10001;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.30);
+    opacity: 0.95;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.confirmation-message {
+    background: #647687;
+}
+
+.confirmation-message-failure {
+    background: red;
+}
+
+.confirmation-message .glyphicon-exclamation-sign, .confirmation-message-failure .glyphicon-exclamation-sign,
+.confirmation-message .close, .confirmation-message-failure .close, {
+    float: left;
+    font-size: 2em;
+    color: white;
+}
